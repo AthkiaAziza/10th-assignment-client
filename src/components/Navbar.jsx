@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { BiSolidPlaneAlt } from "react-icons/bi";
 
 
@@ -40,8 +40,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn bg-blue-900 text-white rounded mr-6">Login</a>
-                    <a className="btn bg-blue-900 text-white rounded">Register</a>
+                    <Link to='/login' className="btn bg-blue-900 text-white rounded mr-6">Login</Link>
+                    <Link to='/register' className="btn bg-blue-900 text-white rounded">Register</Link>
                 </div>
             </div>
             <div className="divider"></div>
